@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Issues site!</title>
+</head>
+<body>
+    {{>header}}
+    <main role="main" class="container">
+      {{>flash}}
+      {{{body}}}
+    </main>
+    {{>footer}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="/scripts/createEmits.js"></script>
+      
+    
+</body>
+</html>

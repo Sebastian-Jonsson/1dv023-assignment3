@@ -1,0 +1,36 @@
+<h1>
+  <span class="fa fa-cogs"></span> Issues - Assignment 3</h1>
+
+<table class="table table-hover">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">User</th>
+      <th scope="col">User Image</th>
+      <th scope="col">State</th>
+      
+    </tr>
+  </thead>
+  <tbody>    
+  {{#if viewData.length}}
+  {{#each viewData}}
+    <tr>
+      <th scope="row">{{this.title}}</th> 
+      <td>{{this.author.name}}</td>
+      <td><a href={{this.url}}> <img src={{this.author.avatar_url}} alt='gitlab user'></a></td>
+      <td>{{this.state}}</td>
+    </tr>
+  {{/each}}
+  {{/if}}
+  <div id="issues-window">
+    <h1>  
+  <span class="fa fa-cogs"></span> Latest changes Assignment 3</h1>
+    
+    <tr class="emitSocket">
+       
+    </tr>
+  </div>
+  </div>
+  
+  </tbody>
+</table>
